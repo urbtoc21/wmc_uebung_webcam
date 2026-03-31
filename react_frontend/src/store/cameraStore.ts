@@ -2,7 +2,9 @@ import {create} from 'zustand'
 import type {Camera} from '../types/Camera'
 
 interface CameraStore {
-    selectedCamera : Camera | null
+    selectedCamera : Camera | null,
+    selectCamera : (camera : Camera) => void,
+    deselectCamera : () => void
 }
 
 export const useCameraStore = create<CameraStore>((set) => ({
