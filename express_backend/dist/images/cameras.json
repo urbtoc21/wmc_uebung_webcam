@@ -1,0 +1,65 @@
+[
+    {
+        "id": "cam1",
+        "name": "Eingangsbereich",
+        "location": "Haustür",
+        "description": "Kamera zur Überwachung des Haupteingangs",
+        "resolution": "1920x1080",
+        "status": "active",
+        "thumbnail": "images/cam1/cam1_0.jpg",
+        "frames": [
+            "images/cam1/cam1_0.jpg",
+            "images/cam1/cam1_1.jpg",
+            "images/cam1/cam1_2.jpg",
+            "images/cam1/cam1_3.jpg",
+            "images/cam1/cam1_4.jpg",
+            "images/cam1/cam1_5.jpg",
+            "images/cam1/cam1_6.jpg",
+            "images/cam1/cam1_7.jpg",
+            "images/cam1/cam1_8.jpg",
+            "images/cam1/cam1_9.jpg"
+        ]
+    },
+    {
+        "id": "cam2",
+        "name": "Garten",
+        "location": "Hinterhof",
+        "description": "Überwachung des Gartenbereichs und der Terrasse",
+        "resolution": "1920x1080",
+        "status": "active",
+        "thumbnail": "images/cam2/cam2_0.jpg",
+        "frames": [
+            "images/cam2/cam2_0.jpg",
+            "images/cam2/cam2_1.jpg",
+            "images/cam2/cam2_2.jpg",
+            "images/cam2/cam2_3.jpg",
+            "images/cam2/cam2_4.jpg",
+            "images/cam2/cam2_5.jpg",
+            "images/cam2/cam2_6.jpg",
+            "images/cam2/cam2_7.jpg",
+            "images/cam2/cam2_8.jpg",
+            "images/cam2/cam2_9.jpg"
+        ]
+    },
+    {
+        "id": "cam3",
+        "name": "Garage",
+        "location": "Garage Innenbereich",
+        "description": "Überwachung der Garage und Fahrzeuge",
+        "resolution": "1280x720",
+        "status": "active",
+        "thumbnail": "images/cam3/cam3_0.jpg",
+        "frames": [
+            "images/cam3/cam3_0.jpg",
+            "images/cam3/cam3_1.jpg",
+            "images/cam3/cam3_2.jpg",
+            "images/cam3/cam3_3.jpg",
+            "images/cam3/cam3_4.jpg",
+            "images/cam3/cam3_5.jpg",
+            "images/cam3/cam3_6.jpg",
+            "images/cam3/cam3_7.jpg",
+            "images/cam3/cam3_8.jpg",
+            "images/cam3/cam3_9.jpg"
+        ]
+    }
+]
