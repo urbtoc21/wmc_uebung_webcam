@@ -34,6 +34,14 @@ export class CameraWebSocketServer {
                     clearInterval(client.interval);
                 }
             });
+
+            client.on('error', (err: Error) => {
+                console.error(err);
+
+                if(client.interval) {
+                    clearInterval(client.interval);
+                }
+            })
         })
     }
 }

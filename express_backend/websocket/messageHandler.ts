@@ -32,7 +32,9 @@ const handleStartStream = (client: ClientWebSocket, cameraId: string) => {
             type: "image",
             imageData: img
         };
-        client.send(JSON.stringify(liveMessage));
+        if(client.readyState === client.OPEN){
+            client.send(JSON.stringify(liveMessage));
+        }
         if(counter < 9){
             counter++;
         }
@@ -46,15 +48,10 @@ const handleStartStream = (client: ClientWebSocket, cameraId: string) => {
  * Read image file and convert to base64 data URL
  */
 export const loadImageAsBase64 = (imagePath: string): string => {
-    // 1. Absoluten Pfad zur Datei erstellen
+
     const fullPath = path.join(process.cwd(), imagePath);
-
-    // 2. Datei synchron als Buffer einlesen
     const imageBuffer = fs.readFileSync(fullPath);
-
-    // 3. Buffer in Base64 umwandeln
     const base64String = imageBuffer.toString('base64');
 
-    // 4. Data-URL Prefix anhängen und zurückgeben
     return `data:image/jpeg;base64,${base64String}`;
 };
